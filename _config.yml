@@ -1,5 +1,6 @@
-title: Generative Art Workshop with Processing
-baseurl: http://opentechschool-brussels.github.io/generative-art-with-processing 
+title: Intro to VVVV, Easily Design Interactive Installations.
+baseurl: http://opentechschool-brussels.github.io/interactive-installations-with-VVVV
+
 
 markdown: redcarpet
 redcarpet:
