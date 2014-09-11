@@ -1,6 +1,4 @@
-Generative-Art-Processing
+Interactive installations with VVVV
 =========================
 
-Material for the Generative Art Processing course.
-
-(@roman: self reminder to get back the updates from the french version)
+Material for the VVVV course.
