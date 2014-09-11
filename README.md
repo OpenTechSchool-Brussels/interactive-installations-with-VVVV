@@ -1,4 +1,6 @@
-interactive-installations-with-VVVV
-===================================
+Generative-Art-Processing
+=========================
 
-Course on VVVV for complete beginners, made for OTS Brussels. 
+Material for the Generative Art Processing course.
+
+(@roman: self reminder to get back the updates from the french version)
