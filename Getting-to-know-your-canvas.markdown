@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "Getting to know your canvas"
+title: "Getting to know your canvas"
 num: 1
 
 ---
