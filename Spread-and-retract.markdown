@@ -16,7 +16,7 @@ You'll see that the whole group of node became one lone node. The input pins and
 
 ![](assets/Ex04-03.JPG)
 
-![Patch 03: nxt sttn...](assets/Ex04.v4p)
+[Patch 03: nxt sttn...](assets/Ex04.v4p)
 
 In order to see its inside, just double right click on it, you can still make modification of this sub-patche if you want to update it. Be careful tho, don't close with *Ctrl-W* (risk losing everything) but close with *Alt-3*. Usually the input and output pins that are created are the one you want, but if you want to add or delete some, just add some **IOBox** (as a feed or as a result of the patch) or delete the one that are already here.
 
@@ -30,11 +30,11 @@ Let's try this simple example. Create another **Transform**, **Segment** and **R
 
 ![](assets/Ex04-04.JPG)
 
-![Patch 04: am I seeing double. ](assets/Ex04_01.v4p)
+[Patch 04: am I seeing double. ](assets/Ex04_01.v4p)
 
 In the context of this workshop, we'll be specifically using **Circular Spread** which is linear but ... along a circle. Try it out on our previous simple example, and then apply it to our current project (only difference here is that instead of having one output value, we have two, *X* and *Y*, varying along a circle). Try to experiment a bit, and after that, look at the following results and its associated patch we'll be basing the rest of the workshop upon.
 
 ![](assets/Ex04-04.JPG)
 
-![Patch 05: The full monty.](assets/Ex04_01.v4p)
+[Patch 05: The full monty.](assets/Ex04_01.v4p)
 
