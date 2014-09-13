@@ -51,6 +51,7 @@ A nice thing in VVVV is that you can connect multiple outputs to inputs. If you 
 Let's awaken the MC in you and open the potential of your mic with the **AudioIn**. Find the node, and add it to your patch. Check the input pins, and especially the last one that should show a microphone hardware, and the first one that is called *Enabled* and that is at 0. It's a classic pin you'll see on many nodes. It only accept two values : 0 (for false) and 1 (for true). So if you actually want to use that node, right click, and glide so that *Enabled* goes to one. You know have your mic, you just need to precise in your patch how you want to read that info. In our case, we want a value that correspond to the amount of sound there is, meaning that we don't care much of the frequency (tonality) of the sound, but its amplitude (its loudness). For that, we'll feed the output of **AudioIn** to the **RMS** node. RMS? Of course my dear, Root Mean Square aka quadratic mean. Who doesn't know that?! Well, I didn't. Wikipedia tells us it's a statistical measure of the magnitude of a varying quantity. Let's agree with wikipedia. In short, the amplitude of the sounds vary a lot, RMS allows us to smooth that value and have one that is coherent over a more human time scale. And once again, best way to get it is to check it out and test it. You can either hover over **RMS** output pin, or feed it, for instance to the *Inner Radius* pin of **Segment**. 
 
 ![](assets/Ex02-01.JPG)
+
 [Patch 02: strike up the tune.](assets/Ex02.v4p)
 
 
