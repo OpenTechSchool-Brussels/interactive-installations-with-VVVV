@@ -27,7 +27,7 @@ Actually Segments allows you to create many shapes, and among them circles. What
 
 ![](assets/Ex01-02.JPG)
 
-[Pacht 01: the circle of life](assets/Ex01.v4p)
+[Patch 01: the circle of life](assets/Ex01.v4p)
 
 Side note: you see above some other box. We are using them to show you the value we decided to use. We'll learn later how and why to use it in your own patch.
 
@@ -49,6 +49,8 @@ A nice thing in VVVV is that you can connect multiple outputs to inputs. If you 
 Let's awaken the MC in you and open the potential of your mic with the **AudioIn**. Find the node, and add it to your patch. Check the input pins, and especially the last one that should show a microphone hardware, and the first one that is called *Enabled* and that is at 0. It's a classic pin you'll see on many nodes. It only accept two values : 0 (for false) and 1 (for true). So if you actually want to use that node, right click, and glide so that *Enabled* goes to one. You know have your mic, you just need to precise in your patch how you want to read that info. In our case, we want a value that correspond to the amount of sound there is, meaning that we don't care much of the frequency (tonality) of the sound, but its amplitude (its loudness). For that, we'll feed the output of **AudioIn** to the **RMS** node. RMS? Of course my dear, Root Mean Square aka quadratic mean. Who doesn't know that?! Well, I didn't. Wikipedia tells us it's a statistical measure of the magnitude of a varying quantity. Let's agree with wikipedia. In short, the amplitude of the sounds vary a lot, RMS allows us to smooth that value and have one that is coherent over a more human time scale. And once again, best way to get it is to check it out and test it. You can either hover over **RMS** output pin, or feed it, for instance to the *Inner Radius* pin of **Segment**. 
 
 ![](assets/Ex02-01.JPG)
+[Patch 02: strike up the tune.](assets/Ex02.v4p)
+
 
 Note that if we connected sound to our value node, you can connect it straight to your pin of choice of **Segment** and **Transform**.
 
@@ -75,6 +77,8 @@ PHOTO HERR INSPECTOR
 Now you can add your text. Go test the whole she-bang. 
 
 ![](assets/Ex03-01.JPG)
+[Patch 03: next station...](assets/Ex03.v4p)
+
 
 ##e) Command center in the making
 We will allow later interesting interaction, but as far as the patch is concerned, classics are a good start. We just heard of **IOBox** and *Ḧerr Inspector*, let's inspect such element... Some parameter are particularly usefull. Among others, *Minimu* and *Maximum* allow you to define a range (put 0 to 1 in order to control an **Enable** pin, nice to stop the random generator on a single value!), for a more sensible display right click on both *Show Value* and *Show Slider* to display slider instead of the value. And don't hesitate to try out the various line of **Slider Behavior** from slider to press button (once again, allowing a nice control of random: fitted on **Enable** it can generate a random value at each press).
@@ -82,7 +86,6 @@ We will allow later interesting interaction, but as far as the patch is concerne
 PHOTO ?
 
 Try to explore already all you can do, use the mic and randomness to feed **Text** and its associated potential **Transform**. Next pic show the rendering we'll base upon in the next section of the workshop. 
-
 
 ![](assets/Ex03-01_rendu.JPG)
 
