@@ -11,7 +11,6 @@ But still a stuff we need to learn and this will be your first one. Unless you s
 
 First of all, we need to select the node we want to add. For that, double left click anywhere on your patch, a menu should appear. You can see a long list of nodes, some "T C F" letters on the side (which are other way of finding your node) and some text area. Start typing "segment" and you'll see the list being filtered bits by bits as you enter text. The node we want is **Segment (DX9)**, click on it when you see it in the list. When done, you see a grey box appearing on your patch. This is the basic object in VVVV, the core of the nodal principle.
 
-
 ![](assets/Illu01.JPG)
 
 Gorgeous isn't it? And yet it'd be so much better with some rendering... Let's do that. Guess what we need for the render? Yep, another node. The most brilliant among us will start seeing a pattern. The node we need is **Renderer (EX9)**. Once you find it, click on it to make it appear on your patch. You should see another screen appearing (on top of having a new node on your patch). A beautiful dark colour is displayed on it, that some of you might recognise as black. A good start.
@@ -24,9 +23,11 @@ Try to connect the output of Segment to the Renderer. For that, left click on th
 
 Well, more like tadam-ish... where is the circle? Where is the love?
 
-Actually Segments allows you to create many shapes, and among them circles. What it does is drawing a part of a regular polygon (triangle, square, pentagons.... to circles when there are a high number of dots). Sounds not very straight forward? Perfect. Because the strength of VVVV is not in lengthy text explanations but in interaction. We told you that we can connect links to input pins, but if you hover above them, you see a message, which display its type and often its current value. Not only can you feed those pins, but you can also manually alter them. Just right click on one (that has a current value), and move your mouse (while still pressing your mouse, drag & drop like). See what's happening? The value is changing, and the results is happening in real time. Experiment with the various input pins, see which you can modify, and try to get a thick circle.
+Actually Segments allows you to create many shapes, and among them circles. What it does is drawing a part of a regular polygon (triangle, square, pentagons.... to circles when there are a high number of dots). Sounds not very straight forward? Perfect. Because the strength of VVVV is not in lengthy text explanations but in interaction. We told you that we can connect links to input pins, but if you hover above them, you see a message, which display its type and often its current value. Not only can you feed those pins, but you can also manually alter them. Just right click on one (that has a current value), and move your mouse (while still pressing your mouse, drag & drop like). See what's happening? The value is changing, and the results is happening in real time. Experiment with the various input pins, see which you can modify, and try to get a thick circle. Below is a possible result and its associated patch.
 
 ![](assets/Ex01-02.JPG)
+
+[Pacht 01: the circle of life](assets/Ex01/v4p)
 
 Side note: you see above some other box. We are using them to show you the value we decided to use. We'll learn later how and why to use it in your own patch.
 
