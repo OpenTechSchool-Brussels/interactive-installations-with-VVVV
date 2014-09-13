@@ -70,11 +70,11 @@ Using another **Transform** and **Segment** node, connected to the **Renderer** 
 
 Polygons are hella sexy but sometimes you need more, like text. So let's add some lyrics to that landscape. To add some text, you need a node weirdly named **Text**. Woah, so many inputs pins... Okay, explore a bit and experiment with possible values. Remember (especially for the *Text* input of the **Text** node) that you can create **IOBox** and then feed those input pins. Just make sure you use the correct type of **IOBox** (string in the case of the *Text* input). Delete the link between **Group** and **Renderer** and instead connect the later to your new **Text** node to see it redenred.
 
-PHOTO
+![](assets/Illu07.JPG)
 
 Ok, but what if we're demanding and want to see both circles and text at the same time? Hmm, there are not enough input pins in **Group**... So, what to do? Either you can stop the workshop and go home (please don't) or you can press *Ctrl-I* after having selected **Group**. You just opened a menu called *Herr Inspector* (VVVS is German, in case you were wondering). This menu regroups setting of the node you just selected. You can do that on any node you want, in our case we want to modify **Layer Temple Count**, two is not enough, chose a higher value (at least three for those that are following...). In VVVV, quitting is linked with the keyboard short-cut *Ctrl-W*. 
 
-PHOTO HERR INSPECTOR
+![](assets/Illu06.JPG)
 
 Now you can add your text. Go test the whole she-bang. 
 
