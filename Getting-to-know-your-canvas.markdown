@@ -20,7 +20,7 @@ Now it's getting serious. We have two nodes. Something to be drawn, and somethin
 
 Try to connect the output of Segment to the Renderer. For that, left click on the output pin of Segment (you will see that some pins grow bigger when you click on a pin, they are compatible pins - you can imagine you should feed text to a node that expect a number). Then click on an input pin of the Renderer node and ... tadam!
 
-![](assets/Ex01-01.PG)
+![](assets/Ex01-01.JPG)
 
 Well, more like tadam-ish... where is the circle? Where is the love?
 
