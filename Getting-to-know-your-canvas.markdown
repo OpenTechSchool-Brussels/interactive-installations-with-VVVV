@@ -27,7 +27,7 @@ Actually Segments allows you to create many shapes, and among them circles. What
 
 ![](assets/Ex01-02.JPG)
 
-[Pacht 01: the circle of life](assets/Ex01/v4p)
+[Pacht 01: the circle of life](assets/Ex01.v4p)
 
 Side note: you see above some other box. We are using them to show you the value we decided to use. We'll learn later how and why to use it in your own patch.
 
