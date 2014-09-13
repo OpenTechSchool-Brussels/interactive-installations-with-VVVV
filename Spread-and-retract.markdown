@@ -30,7 +30,7 @@ Let's try this simple example. Create another **Transform**, **Segment** and **R
 
 ![](assets/Ex04_r.JPG)
 
-[Patch 04: Music makes me see double.](assets/Ex04_r1.v4p)
+[Patch 04: Music makes me see double.](assets/Ex04-r1.v4p)
 
 In the context of this workshop, we'll be specifically using **Circular Spread** which is linear but ... along a circle. Try it out on our previous simple example, and then apply it to our current project (only difference here is that instead of having one output value, we have two, *X* and *Y*, varying along a circle). Try to experiment a bit, and after that, look at the following results and its associated patch we'll be basing the rest of the workshop upon.
 
