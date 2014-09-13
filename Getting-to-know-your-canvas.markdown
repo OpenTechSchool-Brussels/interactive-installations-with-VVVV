@@ -37,11 +37,13 @@ By the way, the patch might not always look as you want. You can left click on a
 ##b) A bit of movement
 So... Where is the circle? Check. Where is the love? Still in process. Let's at least have a bit of life and movement already. The segment node is a kind of graphic primitive, it defines what you draw, but not where you draw it. This is because the "where" can be applied to a lot of different objects, so VVVV have a generic node for that. If you learn how to move a segment you can move anything. For that, we need the node **Transform (2d)**. Double click on it to make it appear. Now we need to apply the output of **Transform** to one of the inputs of **Segment**. Can you guess which one? Try to hover over the input little grey squares of the **Segment** node to see what are the expected type of inputs. The second from left needs a Transform type, let's connect it to it. Nothing happens, what a huge let down... and yet, so many inputs for the **Transform** node. Try to modify those values by right clicking on them and drag & dropping. 
 
-Good, some movement, but movement and animations are not the same things. Right now, we still respond to input from the user. This author have to confess an adoration for one of the super power of computers: random enough number generation, aka chaos. It's the easiest way to add some movement (if not chaos) to your renderer. As always, we'll need a node, it should have been named **Awesome** but instead VVVV kept it simple and named it **Random**. Hover over the output pin and you'll see changing values, yay, potential random animations. Now .... it's up to you. Link the output of the **Random** node to anything, either from the **Segment** node or the **Transform** node and see what happens. You can also use many **Random** nodes. If you don't where to start, connect **Random** to the *Cycles* input pin of **Segment** with its *Inner Radius* set at a value around 1. Chill ..... By the way, if you didn't realise one of the pins of **Segment** allows you to change the colour, now is time to try it out. If you prefer to have a node with those value, double right click to release a menu with all IOboxes value. 
+Good, some movement, but movement and animations are not the same things. Right now, we still respond to input from the user. This author have to confess an adoration for one of the super power of computers: random enough number generation, aka chaos. It's the easiest way to add some movement (if not chaos) to your renderer. As always, we'll need a node, it should have been named **Awesome** but instead VVVV kept it simple and named it **Random**. Hover over the output pin and you'll see changing values, yay, potential random animations. Now .... it's up to you. Link the output of the **Random** node to anything, either from the **Segment** node or the **Transform** node and see what happens. You can also use many **Random** nodes. If you don't where to start, connect **Random** to the *Cycles* input pin of **Segment** with its *Inner Radius* set at a value around 1. Chill ..... By the way, if you didn't realise one of the pins of **Segment** allows you to change the colour, now is time to try it out.
 
 ![](assets/Illu02.JPG)
+
 ![](assets/Illu02b.JPG)
 
+If you prefer, you can have nodes with those value. Double right click to release a menu with all IOboxes possible nodes. Among others, you will see **Bang** and **Toggle**. **Toggle** works like a classic on/off switch (like a light switch) while **Bang** works as a press switch, giving an impulse like on a keyboard.
 
 A nice thing in VVVV is that you can connect multiple outputs to inputs. If you want to scale the circle randomly, but both on X and Y with the same value so it keeps on beeing a circle, you can connect the output of **Random** (same node as previous, or another created for the occasion) to both the *X scale* and *Y scale* input of the **Transform** node.
 
@@ -80,6 +82,7 @@ Ok, but what if we're demanding and want to see both circles and text at the sam
 Now you can add your text. Go test the whole she-bang. 
 
 ![](assets/Ex03-01.JPG)
+
 [Patch 03: next station...](assets/Ex03.v4p)
 
 
