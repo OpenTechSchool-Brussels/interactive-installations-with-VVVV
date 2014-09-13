@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Help yourself to some lukum, and some patches too"
+title: "Help yourself to some patches"
 num: 3
 ---
 
