@@ -1,0 +1,83 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta32.1.dtd" >
+   <PATCH nodename="D:\ACTIONS\2014-08 WORKSHOP VVVV\PATCHES\Ex04.v4p" systemname="Ex04" filename="D:\ACTIONS\2014-08 WORKSHOP VVVV\PATCHES\Ex04.v4p" locked="0">
+   <BOUNDS type="Window" left="6435" top="2865" width="10860" height="8145">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="31.9.0">
+   </PACK>
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="19" hiddenwhenlocked="0">
+   <BOUNDS type="Node" left="4860" top="4440" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4860" top="4440" width="2340" height="1890">
+   </BOUNDS>
+   <BOUNDS type="Window" left="17985" top="3300" width="7005" height="6525">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="8">
+   </PIN>
+   </NODE>
+   <NODE id="30" nodename="AudioIn (DShow9)" systemname="AudioIn (DShow9)">
+   <BOUNDS height="0" left="3930" top="2505" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Audio" visible="1">
+   </PIN>
+   <PIN pinname="Enabled" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Bit Depth" slicecount="1" values="16Bit">
+   </PIN>
+   <PIN pinname="Buffer Size" slicecount="1" values="2048">
+   </PIN>
+   <PIN pinname="Channel Mode" slicecount="1" values="Monaural">
+   </PIN>
+   <PIN pinname="Buffer Count" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Sample Rate" slicecount="1" values="44100">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="26" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Box" left="4920" top="1980" width="1590" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4920" top="1980" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" values="|Microphone (4- Périphérique High Definition Audio)|">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="26" srcpinname="Output Enum" dstnodeid="30" dstpinname="Driver">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="49" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="6765" top="2640" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6765" top="2640" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Transform In|">
+   </PIN>
+   </NODE>
+   <NODE systemname="RMS (DShow9)" nodename="RMS (DShow9)" componentmode="Hidden" id="50">
+   <BOUNDS type="Node" left="3930" top="2955" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Audio" visible="1">
+   </PIN>
+   <PIN pinname="RMS" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="30" srcpinname="Audio" dstnodeid="50" dstpinname="Audio">
+   </LINK>
+   <NODE systemname="MetroCircle" filename="MetroCircle.v4p" nodename="MetroCircle.v4p" componentmode="InAWindow" id="55">
+   <BOUNDS type="Node" left="4850" top="3693" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="-625" top="81" width="10950" height="7225">
+   </BOUNDS>
+   <BOUNDS type="Window" left="18870" top="5265" width="10950" height="7215">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="50" srcpinname="RMS" dstnodeid="55" dstpinname="Cycles">
+   </LINK>
+   <LINK srcnodeid="55" srcpinname="Layer" dstnodeid="19" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="49" srcpinname="Output Node" dstnodeid="55" dstpinname="Transform In">
+   </LINK>
+   </PATCH>
