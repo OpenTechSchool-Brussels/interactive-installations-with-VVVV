@@ -11,6 +11,7 @@ But still a stuff we need to learn and this will be your first one. Unless you s
 
 First of all, we need to select the node we want to add. For that, double left click anywhere on your patch, a menu should appear. You can see a long list of nodes, some "T C F" letters on the side (which are other way of finding your node) and some text area. Start typing "segment" and you'll see the list being filtered bits by bits as you enter text. The node we want is **Segment (DX9)**, click on it when you see it in the list. When done, you see a grey box appearing on your patch. This is the basic object in VVVV, the core of the nodal principle.
 
+
 PHOTO (et text à coté, pas en dessous...)
 
 Gorgeous isn't it? And yet it'd be so much better with some rendering... Let's do that. Guess what we need for the render? Yep, another node. The most brilliant among us will start seeing a pattern. The node we need is **Renderer (EX9)**. Once you find it, click on it to make it appear on your patch. You should see another screen appearing (on top of having a new node on your patch). A beautiful dark colour is displayed on it, that some of you might recognise as black. A good start.
@@ -18,6 +19,8 @@ Gorgeous isn't it? And yet it'd be so much better with some rendering... Let's d
 Now it's getting serious. We have two nodes. Something to be drawn, and something to be drawn on. What about making everybody happy and connecting them? For that you need the second kind of object in VVVV: the links. It's time to understand what those little grey squares are on top & bottom of the nodes. The grey squares on top of a node are its input. You can feed them values (text, numbers, shapes...) that will be taken into account by the node. The grey square on the bottom are the outputs, the result(s) of your node. Usually, the output of one node become the output of another one, creating a data flow.
 
 Try to connect the output of Segment to the Renderer. For that, left click on the output pin of Segment (you will see that some pins grow bigger when you click on a pin, they are compatible pins - you can imagine you should feed text to a node that expect a number). Then click on an input pin of the Renderer node and ... tadam!
+
+![](assets/Ex01-01.PG)
 
 Well, more like tadam-ish... where is the circle? Where is the love?
 
