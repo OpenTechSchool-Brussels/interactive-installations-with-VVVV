@@ -83,7 +83,6 @@ Now you can add your text. Go test the whole she-bang.
 
 
 ##e) Command center in the making
-We will allow later interesting interaction, but as far as the patch is concerned, classics are a good start. We just heard of **IOBox** and *Ḧerr Inspector*, let's inspect such element... Some parameter are particularly usefull. Among others, *Minimu* and *Maximum* allow you to define a range (put 0 to 1 in order to control an **Enable** pin, nice to stop the random generator on a single value!), for a more sensible display right click on both *Show Value* and *Show Slider* to display slider instead of the value. And don't hesitate to try out the various line of **Slider Behavior** from slider to press button (once again, allowing a nice control of random: fitted on **Enable** it can generate a random value at each press).
 
 PHOTO ?
 
