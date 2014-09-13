@@ -66,7 +66,7 @@ By the way, you've been already using a few nodes. Sometimes it's hard to rememb
 A tad sad to only have one thing to display, let's add some more stuff on the renderer. By the way, if you want your render stand alone or in the patch window, you just need to press *Alt-1* or *Alt-2* try it up. In order to add things, we need to feed **Renderer** with more inputs. Alas, if it's possible to have many links from an output pin, only one link can connect to an input pin. So, we need something to group multiple input. A fitting name for the action, since the node we need is called **Group**. This node will aggregate as many inputs as you want (on various input pins) and group then into a single output that you can feed another node. In our case, use as input the outputs of both **Segment** nodes and then feed the **Render** node with the now single output of **Group**. 
 Using another **Transform** and **Segment** node, connected to the **Renderer** try to create a small disc inside our current circle.
 
-PHOTO WITH RESULTS
+![](assets/Illu05.JPG)
 
 Polygons are hella sexy but sometimes you need more, like text. So let's add some lyrics to that landscape. To add some text, you need a node weirdly named **Text**. Woah, so many inputs pins... Okay, explore a bit and experiment with possible values. Remember (especially for the *Text* input of the **Text** node) that you can create **IOBox** and then feed those input pins. Just make sure you use the correct type of **IOBox** (string in the case of the *Text* input). Delete the link between **Group** and **Renderer** and instead connect the later to your new **Text** node to see it redenred.
 
