@@ -1,0 +1,89 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta32.1.dtd" >
+   <PATCH nodename="C:\Users\Zharkov\Desktop\Ex04-r1.v4p" systemname="Ex04-r1" filename="C:\Users\Zharkov\Desktop\Ex04-r1.v4p" locked="0">
+   <BOUNDS type="Window" left="6000" top="2625" width="20670" height="11310">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="31.9.0">
+   </PACK>
+   <NODE systemname="LinearSpread (Spreads)" nodename="LinearSpread (Spreads)" componentmode="Hidden" id="76">
+   <BOUNDS type="Node" left="1995" top="3315" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Spread Count" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="Width" visible="1" slicecount="2" values="0.0151704161484523,0.0151443642993332">
+   </PIN>
+   </NODE>
+   <NODE systemname="Segment (DX9)" nodename="Segment (DX9)" componentmode="Hidden" id="77">
+   <BOUNDS type="Node" left="2055" top="5835" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Inner Radius" slicecount="1" values="0.92">
+   </PIN>
+   </NODE>
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InABox" id="79">
+   <BOUNDS type="Node" left="6360" top="1920" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6360" top="1920" width="7455" height="5220">
+   </BOUNDS>
+   <BOUNDS type="Window" left="12225" top="7155" width="6240" height="5010">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Transform (Transform 2d)" nodename="Transform (Transform 2d)" componentmode="Hidden" id="80">
+   <BOUNDS type="Node" left="2070" top="4560" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="TranslateX" visible="1">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="ScaleX" slicecount="1" values="0.8">
+   </PIN>
+   <PIN pinname="ScaleY" slicecount="1" values="0.8">
+   </PIN>
+   <PIN pinname="Rotate" visible="1" slicecount="1" values="0.20768003212288">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="76" srcpinname="Output" dstnodeid="80" dstpinname="TranslateX">
+   </LINK>
+   <LINK srcnodeid="80" srcpinname="Transform Out" dstnodeid="77" dstpinname="Transform">
+   </LINK>
+   <LINK srcnodeid="77" srcpinname="Layer" dstnodeid="79" dstpinname="Layers">
+   </LINK>
+   <NODE systemname="AudioIn (DShow9)" nodename="AudioIn (DShow9)" componentmode="Hidden" id="81">
+   <BOUNDS type="Node" left="2190" top="765" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Audio" visible="1">
+   </PIN>
+   <PIN pinname="Enabled" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="RMS (DShow9)" nodename="RMS (DShow9)" componentmode="Hidden" id="82">
+   <BOUNDS type="Node" left="2205" top="1605" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Audio" visible="1">
+   </PIN>
+   <PIN pinname="RMS" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="81" srcpinname="Audio" dstnodeid="82" dstpinname="Audio">
+   </LINK>
+   <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="83">
+   <BOUNDS type="Node" left="2115" top="2595" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="4.13">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="82" srcpinname="RMS" dstnodeid="83" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="83" srcpinname="Output" dstnodeid="76" dstpinname="Width">
+   </LINK>
+   </PATCH>
