@@ -41,5 +41,5 @@ In the context of this workshop, we'll be specifically using **Circular Spread**
 
 And now for something different... To show you that you can already do pretty nice and quite different stuff, here is an example using only stuff you know by now. Enjoy!
 
-[Patch 06: Holy Moly.](assets/Ex04_01.v4p)
+[Patch 06: Holy Moly.](assets/Ex04-r2.v4p)
 
