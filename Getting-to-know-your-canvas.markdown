@@ -80,5 +80,10 @@ We will allow later interesting interaction, but as far as the patch is concerne
 
 PHOTO ?
 
-Try to explore already all you can do, use the mic and randomness to feed **Text** and its associated potential **Transform**. And take a deep breath, because you're in for a treat in next session, we'll discover the not so dark arcane of VVVV.
+Try to explore already all you can do, use the mic and randomness to feed **Text** and its associated potential **Transform**. Next pic show the rendering we'll base upon in the next section of the workshop. 
+
+
+![](assets/Ex03-01_rendu.JPG)
+
+Speaking of the next section, take a deep breath, we'll discover the not so dark arcane of VVVV.
 
