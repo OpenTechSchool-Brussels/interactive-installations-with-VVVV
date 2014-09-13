@@ -40,6 +40,8 @@ So... Where is the circle? Check. Where is the love? Still in process. Let's at 
 Good, some movement, but movement and animations are not the same things. Right now, we still respond to input from the user. This author have to confess an adoration for one of the super power of computers: random enough number generation, aka chaos. It's the easiest way to add some movement (if not chaos) to your renderer. As always, we'll need a node, it should have been named **Awesome** but instead VVVV kept it simple and named it **Random**. Hover over the output pin and you'll see changing values, yay, potential random animations. Now .... it's up to you. Link the output of the **Random** node to anything, either from the **Segment** node or the **Transform** node and see what happens. You can also use many **Random** nodes. If you don't where to start, connect **Random** to the *Cycles* input pin of **Segment** with its *Inner Radius* set at a value around 1. Chill ..... By the way, if you didn't realise one of the pins of **Segment** allows you to change the colour, now is time to try it out. If you prefer to have a node with those value, double right click to release a menu with all IOboxes value. 
 
 ![](assets/Illu02.JPG)
+![](assets/Illu02b.JPG)
+
 
 A nice thing in VVVV is that you can connect multiple outputs to inputs. If you want to scale the circle randomly, but both on X and Y with the same value so it keeps on beeing a circle, you can connect the output of **Random** (same node as previous, or another created for the occasion) to both the *X scale* and *Y scale* input of the **Transform** node.
 
@@ -56,7 +58,7 @@ Note that if we connected sound to our value node, you can connect it straight t
 
 Not happy of the kind of variation? You can modify the value and make mathematical operation over it (same for the output of **Random** or any other number) with various nodes such as \*, /, - or +. Below is an example of such usage. 
 
-PHOTO USAGE BASIC MATHS
+![](assets/Illu04.JPG)
 
 By the way, you've been already using a few nodes. Sometimes it's hard to remember what they exactly do. If you're curious about what a node does, select it and press *F1* if the node is common enough, you'll get a help with an example of usage. Even better, this is a patch, so you can copy past from it if you like what you see!
 
