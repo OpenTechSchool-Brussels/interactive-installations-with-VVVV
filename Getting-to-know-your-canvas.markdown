@@ -86,11 +86,10 @@ Now you can add your text. Go test the whole she-bang.
 [Patch 03: next station...](assets/Ex03.v4p)
 
 
-##e) Command center in the making
+##e) Explore
+That's the most important thing you can do in VVVV. It's easy to manipulate nodes, make modification and see in real time your results, way more than with text base programming. Use that and try to explore the possibilities. Don't hesitate to discover new nodes too. You remember the "T F C" letter when you clicked to add a node? Click on C, and you'll see nodes by category, a nice way to explore them. Once it's added, select it and press **F1** in order to see an example of its possibilities.
 
-PHOTO ?
-
-Try to explore already all you can do, use the mic and randomness to feed **Text** and its associated potential **Transform**. Next pic show the rendering we'll base upon in the next section of the workshop. 
+Next pic show the rendering we'll base upon in the next section of the workshop. 
 
 ![](assets/Ex03-01_rendu.JPG)
 
